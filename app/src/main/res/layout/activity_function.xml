@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".FunctionActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_func_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="跳转之后的页面"-->
+<!--        android:textSize="25dp"-->
+<!--        android:gravity="center"-->
+<!--        />-->
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottomnavigationView"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigationView"
+        android:layout_alignParentBottom="true"
+        android:background="#8FD6DF"
+        android:layout_width="match_parent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation"
+        android:layout_height="wrap_content"/>
+    
+    
+</RelativeLayout>
